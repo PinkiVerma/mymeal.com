@@ -1,0 +1,189 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 500px;
+    background-color:black;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo{
+    margin: 25px 25px;
+    height: 50px;
+}
+
+#logo img{
+    margin: -10px -16px;
+    position:relative;
+    top: 1px;
+}
+
+#navbar ul{
+    display: flex;
+    font-size: 1.4rem;
+}
+
+#navbar ul li{
+    list-style:none;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 5px 20px; 
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    border-radius:25px;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+}
+
+#home::before{
+    background: url('../bg.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 500px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#home h1{
+    color: white;
+    /* text-align: center; */
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 8px 13px;
+    margin: 8px 13px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 5px solid rgb(83, 13, 13);
+    width: 300px;
+    border-radius: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: black;
+}
+
+#services{
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-container{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    border: 10px solid white;
+    height: 600px;
+    border-radius: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: black;
+    background-color: wheat;
+}
+
+.thirdcontent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactUsContainer{
+    border: 10px solid white;
+    background-color: wheat;
+    border-radius: 20px;
+    position: relative;
+    top: 800px;
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contactUsContainer h1{
+    position: relative;
+    top:600px;
+}
+
+#form-container{
+    display: flex;
+    flex-flow: column;
+    min-width: 50%;
+    justify-content: space-around;
+}
+
+.form-group input{
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    margin :10px;
+    border: 5px solid rgb(83, 13, 13);
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
